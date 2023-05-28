@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrosel.css">
+    <link href="https://fonts.googleapis.com/css?family=Autour+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      
+        section#principal{
+            width: 100%;
+            height: 500px;
+            background-image: url(Images/restautante1.png);
+            
+      
+       
+        }
+        div#fundo{
+            text-align: center;
+            background-color: #FFF9F2; 
+            width: 80%; 
+            height: 80%;
+            position: absolute;
+            bottom: 0px;
+            left: 10%;
+           
+          
+        }
+        div#titulo{
+            text-align: justify;
+            margin-top: 10%;
+            margin-left: 10%;
+            width: 100%;
+            height:100px;
+           
+        
+        }
+        img#logores{
+            width: 60px;
+            height: 60px;
+            
+            
+        }
+        h1{
+            font-family:Autour One;
+	         text-align:left;
+	         font-size:24px;
+	         letter-spacing:-10; 
+             margin-left: 10%;
+             display: inline;
+
+           
+        }
+        h2{
+    color:rgba(0, 0, 0, 1);
+    font-family:Autour One;
+	font-size:12px;
+	letter-spacing:-10;
+}
+div#carroselres{
+    overflow-x: auto;
+    display: flex;;
+}
+
+  section#carroselres{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;  
+    height: 50px;
+
+}
+.carousel__viewport{
+    height: 100px;
+}   
+.carousel__navigation{
+    margin-bottom: 135px;
+    display: none;
+}     .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next{
+    top: 45px;
+    height: 35px;
+    width: 35px;
+    display: none;
+  }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img id="menu" src="Images/icones/menu-removebg-preview.png" alt="menu">
+        </a>
+        <img id="logo" src="Images/icones/logo-removebg-preview.png" alt="logo">
+        <img id="lupa" src="Images/icones/Lupa-removebg-preview.png" alt="Lupa">
+        <footer id="cabecalhorodape"></footer>
+       </header>  
+       <main>
+      <section id="principal">
+         <div id="fundo">
+           <div id="titulo">
+            <img src="Images/logos/ze burguer.png" alt="" id="logores">
+            <h1>Zé Burguer</h1>
+            <br>
+            <br>
+            <h2>Rua dos Alvarengas - 4001 - nº69</h2>
+            </div>
+           <section  id="carroselres">
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper">
+                        
+                      <a href="#carousel__slide4"
+                         class="carousel__prev">Go to last slide</a>
+                      <a href="#carousel__slide2"
+                         class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide2"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3"
+                       class="carousel__next">Go to next slide</a>
+                  </li>
+                  <li id="carousel__slide3"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4"
+                       class="carousel__next">Go to next slide</a>
+                  </li>
+                  <li id="carousel__slide4"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1"
+                       class="carousel__next">Go to first slide</a>
+                  </li>
+                </ol>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide1"
+                         class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide2"
+                         class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide3"
+                         class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide4"
+                         class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                  </ol>
+                </aside>
+              </section>
+           </section>
+         </div>
+      </section>
+       </main>
+      <footer id="rodape">
+        <div id="divrodape"></div>
+      </footer>
+</body>
+</html>
