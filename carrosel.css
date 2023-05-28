@@ -99,7 +99,7 @@
   .carousel__slide {
     position: relative;
     flex: 0 0 100%;
-    width: 100%;
+    width: 100%;  
     background-color: #f99;
     counter-increment: item;
   }
@@ -156,7 +156,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    top: 145px;
+    margin-bottom: 130px;
     text-align: center;
     
   }
