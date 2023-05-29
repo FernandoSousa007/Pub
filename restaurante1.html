@@ -29,7 +29,7 @@
             text-align: center;
             background-color: #e5e5e5; 
             width: 80%; 
-            height: 80%;
+            height: 88%;
             position: absolute;
             bottom: 0px;
             left: 10%;
@@ -115,13 +115,13 @@ div#carroselres{
             padding:0;
              font-family:Autour One;
 	         text-align:center;
-	         font-size:24px;
+	         font-size: 15px;
 	         letter-spacing:-10;
             width: 176px;
             height: 50px;
-            font-size: 18px;
-            margin-left: 45px;
+            margin-left: 38px;
             margin-top: -55px;
+            
            
             }
         img.cardapio{
@@ -149,30 +149,115 @@ div#carroselres{
         display: flex;
         text-align: center; 
         height: 40px;
-        width: 125px;
-        margin-left: 190px;
+        width: 100px;
+        margin-left: 185px;
         margin-top: -50px;
         border: 3px solid black;
         border-radius: 8px;
         
        
       }
-        img.botao{
-          margin-left:15px ;
-          margin-right: 15px;
-        width: 25px;
-        height: 25px;
-      
-       }
-       button{
+      button{
         background-color: white;
         border: none;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+      
+
        }
+        img.botao{
+         
+        width: 25px;
+        height: 25px;
+        
+      
+       }
+       
        h2{
         font-size: 18px;
         margin-top: auto;
         margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        
        }
+       .grande{
+        font-size: 12px;
+       }
+       div#pedir{
+        color: white;
+        background-color: #F0A236;
+        width: 250px;
+        height: 65px;
+        margin-left: -103px;
+        margin-right: auto;
+        margin-top: -40px;
+        border-radius: 5px;
+        position: absolute;
+    
+       }
+       div#pedir > h1{
+        margin-top: 5%;
+        font-size:35px ;
+     
+       }
+       div#pedir > p{
+        font-family:Autour One;
+	         text-align:center;
+	         font-size: 15px;
+	         letter-spacing:-10;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: red;
+        position: absolute;
+        top: -8px;
+        right: -7px;
+        color: white;
+       }
+       div#conta{
+        width: 350px;
+        height: 500px;
+        overflow-y: auto;
+       background-color: #FFF9F2;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: -620px;
+       position: relative; 
+       margin-left: auto;
+       margin-bottom: auto;
+     
+ 
+          }
+          img#botaox{
+            width: 60px;
+            width: 60px;
+            margin-top: 15px;
+            margin-left:120px;
+          }
+          div#conta > div{
+            border: 3px solid  #F0A236;
+            border-radius: 5px;
+            width: 100%;
+            height: 60px;
+            margin-bottom: 10px;
+            display: none;
+            
+           
+          }
+          div.pedido  > h2{
+            display: inline-flex;
+               margin-top: 15px;
+               margin-right: 10px;
+               font-size: 15px;
+               
+          }
+        h2#pedido1{
+          margin-left: -35px;
+          
+        }
     </style>
 </head>
 <body>
@@ -186,6 +271,7 @@ div#carroselres{
        </header>  
        <main>
       <section id="principal">
+        
          <div id="fundo">
            <div id="titulo">
             <img src="Images/logos/ze burguer.png" alt="" id="logores">
@@ -274,7 +360,8 @@ div#carroselres{
                 <div class="qty">
                   <button  id="diminuir2" onclick="diminuir2()"><img src="Images/botoes/minussigncircularbutton_122018.png" alt="" class="botao"></button>
                   <h2 id="quantidade2">0</h2>
-                  <button id="adicionar2" onclick="adicionar2()"><img src="Images/botoes/botao-de-sinal-de-mais.png" alt="" class="botao"></button>
+                  <button id="adicionar2" onclick="adicionar2()"><img src="Images/botoes/botao-de-sinal-de-mais.png" alt="" class="botao">
+                  </button>
                 </div>
             </div>
             <div class="cardapio">
@@ -298,7 +385,7 @@ div#carroselres{
             </div>
             <div class="cardapio">
               <img src="Images/produtos/xipicanha.jpg" alt=""class="cardapio" id="xpicanha" >
-                   <h1 class="cardapio">X-Picanha<br>R$29,99</h1>
+                   <h1 class="cardapio" id="xpicanha">X-Picanha<br>R$29,99</h1>
                    <div class="qty">
                     <button  id="diminuir5" onclick="diminuir5()"><img src="Images/botoes/minussigncircularbutton_122018.png" alt="" class="botao"></button>
                     <h2 id="quantidade5">0</h2>
@@ -323,6 +410,7 @@ div#carroselres{
                   <button id="adicionar7" onclick="adicionar7()"><img src="Images/botoes/botao-de-sinal-de-mais.png" alt="" class="botao"></button>
                 </div>
             </div
+            <p></p>
             <div class="cardapio">
               <img src="Images/produtos/agua.webp" alt="" class="cardapio">
                 <h1 class="cardapio">Água 500ml <br>R$4,99</h1>
@@ -334,7 +422,7 @@ div#carroselres{
             </div>
             <div class="cardapio">
                 <img src="Images/produtos/coca.jpg" alt="" class="cardapio">
-                <h1 class="cardapio">Coca  500ml<br>R$7,99 </h1>
+                <h1 class="cardapio grande" >Coca Cola<br>R$7,99 </h1>
                 <div class="qty">
                   <button  id="diminuir9" onclick="diminuir9()"><img src="Images/botoes/minussigncircularbutton_122018.png" alt="" class="botao"></button>
                   <h2 id="quantidade9">0</h2>
@@ -343,7 +431,7 @@ div#carroselres{
             </div>
             <div class="cardapio">
               <img src="Images/produtos/guarana.avif" alt="" class="cardapio"  >
-                <h1 class="cardapio">Guarana 500ml<br>R$7,99 </h1>
+                <h1 class="cardapio grande"  >Guarana <br>R$7,99 </h1>
                 <div class="qty">
                   <button  id="diminuir10" onclick="diminuir10()"><img src="Images/botoes/minussigncircularbutton_122018.png" alt="" class="botao"></button>
                   <h2 id="quantidade10">0</h2>
@@ -360,16 +448,58 @@ div#carroselres{
                     <button id="adicionar11" onclick="adicionar11()"><img src="Images/botoes/botao-de-sinal-de-mais.png" alt="" class="botao"></button>
                 </div>
             </div>
-         </section> 
+           
+         
+         </section>
+         <button id="pedido" onclick="pedido()" >
+          <div id="pedir">
+            <h1>Fazer Pedido</h1>
+              <p id="total">0</p>
+          </div>
+         </button>
          </div>
          </div>
+         
       </section>
        </main>
+       <div id="conta">
+            <button id="sair" onclick="sair()"> <img src="Images/botoes/botao x.png" alt="" id="botaox"></button>
+            <div id="div1" class="pedido" >
+              <h2 id="pedido1">
+              <h2 id="quantidadep1"></h2>
+              <h2 id="produto1"></h2>
+              <h2 id="preco1"></h2>
+              <h2 id="precototal1"></h2>
+              </h2>
+   
+            </div>
+            <div id="div2" class="pedido" >
+              <h2 id="pedido1">
+                <h2 id="quantidade2"></h2>
+                <h2 id="produto2"></h2>
+                <h2 id="preco2"></h2>
+                <h2 id="precototal2"></h2>
+                </h2>
+            </div>
+            <div id="div3" class="pedido">
+              <h2 id="pedido3">
+                <h2 id="quantidadep3"></h2>
+                <h2 id="produto3"></h2>
+                <h2 id="preco3"></h2>
+                <h2 id="precototal3"></h2>
+                </h2>
+            </div>
+            <div id="div4" class="pedido" ></div>
+            <div id="div5" class="pedido" ></div>
+            <div id="div6" class="pedido" ></div>
+            <div id="div7" class="pedido" ></div>
+            <div id="div8" class="pedido" ></div>
+          </div>
       <footer id="rodape">
         <div id="divrodape"></div>
       </footer>
       
-</body>
+</body>  
 
 </script>
 </html>
