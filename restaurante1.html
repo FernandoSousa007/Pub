@@ -218,9 +218,9 @@ div#carroselres{
         color: white;
        }
        div#conta{
-        width: 350px;
-        height: 500px;
-        overflow-y: auto;
+        width: 500px;
+        height: 630px;
+        overflow-y: scroll;
        background-color: #FFF9F2;
        margin-left: auto;
        margin-right: auto;
@@ -233,12 +233,13 @@ div#carroselres{
  
           }
           img#botaox{
-            width: 60px;
-            width: 60px;
-            margin-top: 15px;
-            margin-left:120px;
+            width: 30px;
+            width: 30px;
+            margin-top: 1px;
+            margin-left:235px;
+            margin-top: 5px;
           }
-          div#conta > div{
+          .pedido{
             border: 3px solid  #F0A236;
             border-radius: 5px;
             width: 100%;
@@ -259,6 +260,26 @@ div#carroselres{
           margin-left: -35px;
           
         }
+        div#concluir{
+        color: white;
+        background-color: #F0A236;
+        width: 250px;
+        height: 65px;
+        margin-left: -103px;
+        margin-right: auto;
+        margin-top: -40px;
+        border-radius: 5px;
+        position: absolute;
+    
+       }
+       div#concluir{
+        margin-top: 15%;
+        font-size:20px ;
+       position: absolute;
+       bottom: 25px;
+       }
+        
+        
     </style>
 </head>
 <body>
@@ -463,6 +484,7 @@ div#carroselres{
          
       </section>
        </main>
+       <section id="sconta">
        <div id="conta">
             <button id="sair" onclick="sair()"> <img src="Images/botoes/botao x.png" alt="" id="botaox"></button>
             <div id="div1" class="pedido" >
@@ -490,11 +512,69 @@ div#carroselres{
                 <h2 id="precototal3"></h2>
                 </h2>
             </div>
-            <div id="div4" class="pedido" ></div>
-            <div id="div5" class="pedido" ></div>
-            <div id="div6" class="pedido" ></div>
-            <div id="div7" class="pedido" ></div>
-            <div id="div8" class="pedido" ></div>
+            <div id="div4" class="pedido" >
+              <h2 id="quantidadep4"></h2>
+                <h2 id="produto4"></h2>
+                <h2 id="preco4"></h2>
+                <h2 id="precototal4"></h2>
+                </h2>
+            </div>
+            <div id="div5" class="pedido" >
+              <h2 id="quantidadep5"></h2>
+                <h2 id="produto5"></h2>
+                <h2 id="preco5"></h2>
+                <h2 id="precototal5"></h2>
+            </h2>
+            </div>
+            <div id="div6" class="pedido" >
+              <h2 id="quantidadep6"></h2>
+                <h2 id="produto6"></h2>
+                <h2 id="preco6"></h2>
+                <h2 id="precototal6"></h2>
+                </h2>
+            </div>
+            <div id="div7" class="pedido" >
+              <h2 id="quantidadep7"></h2>
+                <h2 id="produto7"></h2>
+                <h2 id="preco7"></h2>
+                <h2 id="precototal7"></h2>
+                </h2>
+            </div>
+            <div id="div8" class="pedido" >
+              <h2 id="quantidadep8"></h2>
+                <h2 id="produto8"></h2>
+                <h2 id="preco8"></h2>
+                <h2 id="precototal8"></h2>
+            </h2>
+            </div>
+            <div id="div9" class="pedido" >
+              <h2 id="quantidadep9"></h2>
+                <h2 id="produto9"></h2>
+                <h2 id="preco9"></h2>
+                <h2 id="precototal9"></h2>
+            </h2>
+          </div>
+          <div id="div10" class="pedido" >
+            <h2 id="quantidadep10"></h2>
+              <h2 id="produto10"></h2>
+              <h2 id="preco10"></h2>
+              <h2 id="precototal10"></h2>
+          </h2>
+          </div>
+          <div id="div11" class="pedido" >
+            <h2 id="quantidadep11"></h2>
+              <h2 id="produto11"></h2>
+              <h2 id="preco11"></h2>
+              <h2 id="precototal11"></h2>
+          </h2>
+        </div>
+        <button id="concluir" onclick="concluir()" >
+          <div id="concluir">
+            <h1>Concluir Pedido</h1>
+             
+          </div>
+         </button>
+      </section>
           </div>
       <footer id="rodape">
         <div id="divrodape"></div>
