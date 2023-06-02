@@ -11,6 +11,7 @@ let p10=[0,"Guarana",7.99,0]
 let p11=[0,"Cerveja",6.99,0]
  t=0
  pe=1
+ c=3
  var a=[0]
  function formatamoeda(numero){
  return numero.toFixed(2).replace(".",",")}
@@ -345,18 +346,24 @@ function diminuir(){
                         vt=p1[3]+p2[3]+p3[3]+p4[3]+p5[3]+p6[3]+p7[3]+p8[3]+p9[3]+p10[3]+p11[3]
                         tprod.innerHTML= t +'x produtos'
                          vtotal.innerHTML='R$ '+formatamoeda(vt)
-                         vtc= vt-(vt*0.1)
-                         totavc.innerHTML= "Valor a a pagar RS"+formatamoeda(vtc)  
-                         alert(a[0])
+                         totavc.innerHTML= "Valor a a pagar RS"+formatamoeda(vt)
+                         
+                         
                         
 
 }                 
-
+function adicionarc(){
+    vtc= vt-(vt*0.1)
+    c=c-1
+    totavc.innerHTML= "Valor a a pagar RS"+formatamoeda(vtc)  
+    tscupom.innerHTML= c+ 'x disponiveis'
+}
 
 
             
             function conta(){
-             
+                c=c+1
+                tscupom.innerHTML= c+ 'x disponiveis'
                 let el= document.getElementById('conta')
                 let es= document.getElementById('cardapiod')
                 let et= document.getElementById('pedir')
