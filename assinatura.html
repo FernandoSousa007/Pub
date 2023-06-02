@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Autour+One&display=swap" rel="stylesheet">
+    <script src="cardapio.js"></script>
+    <link rel="stylesheet" href="cabecalho.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      
+        body {
+        text-align: justify;
+     background-color: #E5E5E5;
+   
+  }
+  header{
+      width: 100%;
+      height: 80px;
+      background-color: #F0A236;
+      text-align: center;
+      
+  }
+  img#menu{
+  
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 25px;
+  top: 15px;
+  }
+  img#logo{
+   width: 60px;
+   height: 66px;
+   top: 15px;
+   
+  
+  
+  background: url(Pub_logo.png);
+  
+  }
+  img#lupa{
+      
+  
+  position: absolute;
+  width: 39.87px;
+  height: 37.9px;
+  margin-top: 15px;
+  right: 5%;
+  
+  
+  
+  }
+  footer#cabecalhorodape{
+      background-color:#ED9205 ;
+      width: 100%;
+      height: 10px;
+  }
+  section#carrosel{
+      margin-top: 20px;
+      margin-left: 25px;
+      margin-right: 25px;
+      height: 150px;
+      box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+      
+  }
+    section#principal{
+      display: flex;
+      justify-content: center;
+      overflow: auto;
+      height: 380px;
+    
+      
+  }
+  div#titulo{
+              text-align: justify;
+              margin-top: 10%;
+              margin-left: 10%;
+              width: 100%;
+              height: 50px;
+              
+             
+          
+          }
+          img#logores{
+              width: 60px;
+              height: 60px;
+              margin-top: 5px;
+              
+              
+          }
+          h1#ze{
+              font-family:Autour One;
+               text-align:left;
+               font-size:24px;
+               letter-spacing:-10; 
+               margin-left: 25%;
+             margin-top: -50px;
+               
+          }
+          h2{
+       color:rgba(0, 0, 0, 1);
+      font-family:Autour One;
+      font-size:12px;
+      letter-spacing:-10;
+    margin-left: 20%;
+    margin-top: -18px;
+  }
+  label{
+    color:rgba(0, 0, 0, 1);
+      font-family:Autour One;
+      font-size:15px;
+        margin-top: 30px;
+  }
+  button{
+    font-family:Autour One;
+	     text-align:center;
+	      font-size: 15px;
+	     letter-spacing:-10;
+         color: white;
+        background-color: #F0A236;
+        width: 250px;
+        height: 65px;
+        margin-top: 40px;
+        margin-left: 25%;
+        border-radius: 5px;
+        border: none;
+        padding: 0;
+      
+  }
+  h2{
+    color: white;
+    font-size: 48px;
+    margin-top: 1%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  main >div{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  button >div{
+margin-top: 0;
+margin-left: 00px;
+  }
+  input{
+   
+    border: none;
+  }
+      </style>
+  </head>
+  <body>
+      <header>
+        <a href="ler.html">
+            <img id="menu" src="Images/icones/ler.png" alt="menu">
+            </a>
+            <a href="index.html">
+                <img id="logo" src="Images/icones/logo-removebg-preview.png" alt="logo"></a>
+            <img id="lupa" src="Images/icones/Lupa-removebg-preview.png" alt="Lupa">
+          <footer id="cabecalhorodape"></footer>
+  
+      </header>
+      <main>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" >
+        </div>
+        <div>
+            <label for="Sobrenome">Sobrenome:</label>
+            <input type="text" name="nome" id="Sobrenome" placeholder="Sobrenome">
+        </div>
+        <div>
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" name="nome" id="nascimento" placeholder="nascimento">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="" id="senha">
+        </div>
+       <div>
+           <input type="radio" id="credito">
+             <label for="credito">Cartão de Credito</label>
+       
+             <input type="radio" id="debito">
+             <label for="debito">Cartão de Debito</label>
+         </div>
+          <div>
+              <label for="ncartao">Número do Cartão:</label>
+               <input type="number" name="" id="ncartao">
+          </div>
+           <div>
+               <label for="datav">Data de validade>:</label>
+               <input type="date" id="datav">
+           </div>
+           <div>
+               <label for="cvv">CVV:</label>
+               <input type="number" maxlength="4" >
+           </div>
+           <div>
+            <input type="radio" id="adc">
+              <label for="adc">Salvar cartão para as proximas compras</label>
+        
+          </div>
+           <div>
+            <h2 style="color: black; font-size:px ;">Valor R$19,99</h2>
+           </div>
+           <button onclick="assinar()">
+          
+            <div>
+                <h2>
+                    Assinar
+                </h2>
+            </div>
+           </button>
+
+      </main>
+      <footer id="rodape">
+        <div id="divrodape"></div>
+      </footer>
+</body>
+</html>

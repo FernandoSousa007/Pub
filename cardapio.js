@@ -11,8 +11,16 @@ let p10=[0,"Guarana",7.99,0]
 let p11=[0,"Cerveja",6.99,0]
  t=0
  pe=1
+ var a=[0]
  function formatamoeda(numero){
  return numero.toFixed(2).replace(".",",")}
+ function assinar(){
+
+    nc= ncartao.value
+    nc4 = nc.slice(-4)
+    a[0]= nc4
+    alert(a[0])
+    }
 function adicionar(){
     p1[0]=p1[0]+1
   
@@ -338,7 +346,9 @@ function diminuir(){
                         tprod.innerHTML= t +'x produtos'
                          vtotal.innerHTML='R$ '+formatamoeda(vt)
                          vtc= vt-(vt*0.1)
-                         totavc.innerHTML= "Valor a a pagar RS"+formatamoeda(vtc)        
+                         totavc.innerHTML= "Valor a a pagar RS"+formatamoeda(vtc)  
+                         alert(a[0])
+                        
 
 }                 
 
