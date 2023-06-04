@@ -27,5 +27,7 @@ function nfc(){
           'display: none'
           eo.style.cssText= 
           'display: none'
+          eq.style.cssText =
+          'display: block;' 
 
 }
