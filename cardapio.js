@@ -235,7 +235,9 @@ function diminuir(){
                 let el= document.getElementById('conta')
                 let es= document.getElementById('cardapiod')
                 let et= document.getElementById('pedir')
-                
+                let eo= document.getElementById('concluir2') 
+                eo.style.cssText =
+                  'display: block;' 
                 es.style.cssText =
                 'background-color: #918a82'
                 et.style.cssText =
@@ -353,11 +355,23 @@ function diminuir(){
 
 }                 
 function adicionarc(){
-    vtc= vt-(vt*0.1)
-    c=c-1
-    totavc.innerHTML= "Valor a a pagar RS"+formatamoeda(vtc)  
-    tscupom.innerHTML= c+ 'x disponiveis'
+    let el= document.getElementById('ccupom')
+    el.style.cssText =
+                  'display: block;' 
 }
+function confirmar(){
+    let el= document.getElementById('cupomd').value
+    if(el=="pubplus"){
+vtc= vt-(vt*0.1)
+c=c-1
+totavc.innerHTML= "Valor a a pagar RS"+formatamoeda(vtc)  
+tscupom.innerHTML= c+ 'x disponiveis'
+let es= document.getElementById('ccupom')
+    es.style.cssText =
+                  'display: none;' }
+else{
+    alert('Cupom Invalido')
+}}
 
 
             
@@ -367,6 +381,9 @@ function adicionarc(){
                 let el= document.getElementById('conta')
                 let es= document.getElementById('cardapiod')
                 let et= document.getElementById('pedir')
+                let eo= document.getElementById('concluir2') 
+                eo.style.cssText =
+                  'display: none;' 
                 es.style.cssText =
                 'background-color: #fff3e5;' 
                  et.style.cssText =

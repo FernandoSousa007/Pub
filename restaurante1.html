@@ -232,16 +232,26 @@ div#carroselres{
         background-color: #fff3e5; 
         width: 100%; 
         height:75%;
+        max-height: 430px;
         padding: 50px;
         position: absolute;
-        bottom: 000px;
+        top: 201px;
         display: none;
         overflow-y: scroll;
+              }
+              div#concluir2{
+                background-color: #fff3e5; 
+                width: 100%; 
+                height: 10%;
+                text-align: center;
+               position: absolute;
+               bottom: 0px;
+               left: 0;
+               padding-left: 40%;
+               padding-top: 40%;
+               display: none;
+              }
           
-       
-     
- 
-          }
           img#botaox{
             width: 30px;
             width: 30px;
@@ -298,25 +308,27 @@ div#carroselres{
         background-color: #F0A236;
         width: 250px;
         height: 65px;
-        margin-left: -103px;
+        margin-left: -83px;
         margin-right: auto;
-        margin-top: -40px;
+        margin-top: -150px;
         border-radius: 5px;
         position: absolute;
     
-       }
-       div#concluir{
-        margin-top: 15%;
         font-size:20px ;
+        margin-bottom: -30%;
+        font-size:20px ;
+    
        }
+      
        div#concluir > h2{
         color: white;
-        margin-top: 7%;
+        margin-top: 6%;
         font-size: 24px;
    
        }
       section#sconta{
          overflow-y: scroll;
+         
       }
       div#totalv{
         display: block;
@@ -360,12 +372,104 @@ div#carroselres{
     right: 100px;
     }
  div#cartao{
-      background-color: #e5e5e5;
+    background-color: rgb(255, 243, 229);
       width: 100%;
       height: 400px;
       margin-top: -70%;
+      position: absolute;
+      border-radius: 40px;
+      border-top  : 15px solid #F8C37C ;
+      left: 0px;
+      bottom: -20px;
+      text-align: left;
+      padding-top: 25px;
+      padding-left: 50PX;
+      display: none;
  }
+ div#ccupom{
+  background-color: rgb(255, 243, 229);
+      width: 100%;
+      height: 300px;
+      margin-top: -70%;
+      position: absolute;
+      border-radius: 40px;
+      border-top  : 10px solid #F8C37C ;
+      left: 0px;
+      bottom: -20px;
+      text-align: left;
+      padding-top: 25px;
+      padding-left: 50PX;
+      display: none;
+      
+ }
+ div#cartao > h2{
+       font-size: 25px;
+ }
+ input{
+    margin-top: 30px;
+ }
+  .radio-label {
+    border: 1px solid rgb(238, 101, 9);
+  }
+ label{
+  font-family:Autour One;
+  letter-spacing:-10;
+	     text-align:center;
+	      font-size: 24px;
+ }
+ img.pag  {
+  max-width: 40px;
+  max-height: 40px;
+  display: inline;
+  
+ }  img#botaox{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+ }   
+ input#cupomd{
+  border: none;
+  font-family:Autour One;
+  letter-spacing:-10;	      
+  width: 80%;
+  height: 35px;
+  border-radius: 17.5px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+ }
+ h2#mp{
+  margin-left: -30px;
+ }
+ button#adicionarca{
+  font-family:Autour One;
+	     text-align:center;
+	      font-size: 15px;
+	     letter-spacing:-10;
+        background-color: #fff3e5;
+        width:100px ;
+        height: 30px;
+        color: #ee6509;
+        text-align: right;
+      position:relative;
+      top: 0px;
+      left:29px;
         
+ }
+
+ p#cartaofl{
+  font-size: 12px; 
+  display: none;
+margin-top: -20px;
+margin-left: -40px;}
+ 
+input#cartaoa:checked ~ p#cartaofl{
+  display: block;
+
+}
     </style>
 </head>
 <body>
@@ -589,6 +693,10 @@ div#carroselres{
             <h2 id="vtotal">R$ xx.xx</h2>
            </div>
            <div id="cupom" class="pedido">
+            <h2 id="mp">Metodo de pagamento</h2>
+            <button id="adicionarca" onclick="metodop()">Adiconar</button>
+          </div>
+           <div id="cupom" class="pedido">
              <h2 id="tcupom">Cupom</h2>
              <button id="adicionarc" onclick="adicionarc()">Adiconar</button>
              <p id="tscupom">3 disponiveis</p>
@@ -597,16 +705,50 @@ div#carroselres{
             <h2>Total</h2>
               <h2 id="totalvc">Valor a a pagar RS xx.xx</h2>
               </div>
-              <button>
-                <div id="concluir">
-                 <h2>Fazer Reserva</h2>
-                </div>
-              </button>
-              <div id="cartao">
-                <h2>Metodo de Pagamento</h2>
-                 
-              </div>
+              
       </section>
+      <button>
+                <div id="concluir2">
+                  <div id="concluir">
+                   <h2>Fazer Reserva</h2>
+                  </div>
+                                </button>
+                </div>
+              
+      <div id="cartao">
+        <h2>Método de <br>Pagamento</h2>
+        <button onclick="sair()">
+          <img src="Images/botoes/botao x.png" alt="" class="botao" id="botaox">
+        </button>
+        <ul>
+        <li>
+          <input type="radio" id="cartaoa" class="radio-label">
+          <label for="cartaoa">Cartão <img src="Images/pagamento/cartao.webp  " alt="" class="pag"></label>
+          <p id="cartaofl" >
+            <input type="radio" id="cartaof" >
+            <label for="cartaof" style="font-size: 15px;" >Cartão final 5446 </label>
+          </p>
+        </li>
+        <li>
+          <input type="radio" id="pix" class="radio-label">
+          <label for="pix">PIX <img src="Images/pagamento/pxi.png" alt=""class="pag"></label>
+        </li>
+        <li>
+          <input type="radio" id="boleto" class="radio-label">
+          <label for="pix">Boleto <img src="Images/pagamento/boelto.png" alt=""class="pag"></label>
+        </li>
+        </ul> 
+      </div>
+      <div id="ccupom">
+        <button onclick="sairc()">
+          <img src="Images/botoes/botao x.png" alt="" class="botao" id="botaox">
+        </button>
+        <h2>Insira o Cupom</h2>
+        <input type="text" name="" id="cupomd" placeholder="3xeMpL0">
+        <button id="confimar" onclick="confirmar()">
+          <img src="Images/botoes/confirmar.png" alt="" class="botao"  id="confimar">
+        </button>
+      </div>
       </div>
           </div>
           <button id="conta" onclick="pedido()" >

@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="cabecalho.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Autour+One&display=swap" rel="stylesheet">
+    <script src="ass.js"></script>
     <title>Document</title>
     <style>
           body{
-            background-color: #fff3e7;}
+            background-color: #fff3e7;
+          }
        
             div.butao{
     text-align: left;
@@ -23,8 +25,10 @@
     background-color:   #f8c47b;
     box-shadow:7px 7px  #e89000 ;
     padding-bottom: 10px;
-     
+    
+   
   }
+  
   img{
     margin-left: 20px;
   }
@@ -36,10 +40,40 @@
              margin-left: 35%;
              margin-top: -25%;
   }
+ 
+  div#nfcl{
+    background-color: #fff3e7;
+   width: 70%;
+   height: 180px;
+   border-radius: 45px;
+   border-top: 3px solid #f8c47b;
+   border-bottom: 3px solid #f8c47b;
+   border-right: 10px solid #f8c47b;
+   border-left: 10px solid #f8c47b;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50%;
+  
+   position: relative;
+  }
+  button{
+    border: none;
+    background-color: #fff3e7;
+    width: 100%;
+    margin-top: 15px;
+    height: 150px;
+ 
+  }
+  h2{
+    font-family:Autour One;
+	     text-align:center;
+	      font-size: 38px;
+	     letter-spacing:-10;
+  }
     </style>
 
 </head>
-<body>
+<body id="body">
     <header>
       <a href="ler.html">
         <img id="menu" src="Images/icones/ler.png" alt="menu">
@@ -52,20 +86,22 @@
     </header>
     <div id="fundo">
        <a href="https://qrcodescan.in">
-        <div class="butao">
+        <div class="butao" id="qr">
             <img src="Images/icones/qrcode.png" alt="">
-            <h1>QR CODE</h1>
+            <h1 id="teste">QR CODE</h1>
         </div>
        </a>
-      
-        <div class="butao">
-            <img src="Images/icones/nfc.png" alt="">
-            <H1>NFC</H1>
-        </div>
+        <button onclick="nfc()" id="botao">
+          <div class="butao">
+              <img src="Images/icones/nfc.png" alt="">
+              <H1>NFC</H1>
+          </div>
+        </button>
+      </div>
         <div id="nfcl">
-            
-        </div>
-    </div>
+            <h2>Aproxime do Leitor NFC</h2>
+       
+     </div>
     <footer id="rodape">
         <div id="divrodape">
             
