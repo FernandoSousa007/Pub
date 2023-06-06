@@ -361,7 +361,7 @@ function adicionarc(){
 }
 function confirmar(){
     let el= document.getElementById('cupomd').value
-    if(el=="pubplus"){
+    if(el=="pubplus"||el=="#10off" ){
 vtc= vt-(vt*0.1)
 c=c-1
 totavc.innerHTML= "Valor a a pagar RS"+formatamoeda(vtc)  
